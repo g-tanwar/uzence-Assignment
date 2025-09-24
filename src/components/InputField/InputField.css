@@ -1,0 +1,128 @@
+.input-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    padding: 6px 10px;
+    background: #fff;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  
+  .input-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+  }
+  
+  .input-container:hover {
+    border-color: #666;
+  }
+  
+  .input-container:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  }
+  
+  /* variants */
+  .input-container.filled {
+    background: #f3f4f6;
+    border: none;
+  }
+  
+  .input-container.ghost {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+  }
+  
+  .input-container.error {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+  }
+  
+  .input-container.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* sizes */
+  .input-container.sm {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+  
+  .input-container.md {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  
+  .input-container.lg {
+    padding: 12px 16px;
+    font-size: 17px;
+  }
+  
+  /* buttons */
+  .clear-btn,
+  .toggle-btn {
+    background: none;
+    border: none;
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  .clear-btn:hover,
+  .toggle-btn:hover {
+    color: #111;
+  }
+  
+  /* spinner */
+  .spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-left: 6px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* helper & error text */
+  .helper-text {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #6b7280;
+  }
+  
+  .error-text {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #dc2626;
+  }
+  

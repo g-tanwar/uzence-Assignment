@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* spinner utility (for InputField loading state) */
+.spinner {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-style: solid;
+  border-radius: 9999px;
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
