@@ -11,7 +11,7 @@ export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElem
   disabled?: boolean;
   invalid?: boolean;
   variant?: "filled" | "outlined" | "ghost";
-  size?: "sm" | "md" | "lg";
+  inputSize?: "sm" | "md" | "lg";
   showClear?: boolean;
   showPasswordToggle?: boolean;
   loading?: boolean;
@@ -27,7 +27,7 @@ const InputField: React.FC<InputFieldProps> = ({
   disabled = false,
   invalid = false,
   variant = "outlined",
-  size = "md",
+  inputSize = "md",
   showClear = true,
   showPasswordToggle = true,
   loading = false,
@@ -52,7 +52,7 @@ const InputField: React.FC<InputFieldProps> = ({
       <div
         className={`input-container ${variant} ${invalid || errorMessage ? "error" : ""} ${
           disabled ? "disabled" : ""
-        } ${size}`}
+        } ${inputSize}`}
       >
         <input
           id={inputId}
